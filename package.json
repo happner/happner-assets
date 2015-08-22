@@ -12,5 +12,16 @@
   },
   "author": "",
   "license": "MIT",
+<<<<<<< HEAD
   "homepage": "https://bitbucket.org/yordigm/happngin-assets#readme"
+=======
+  "homepage": "https://bitbucket.org/yordigm/happngin-assets#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "md5": "^2.0.0",
+    "request": "^2.61.0",
+    "uglify-js": "^2.4.24",
+    "when": "^3.7.3"
+  }
+>>>>>>> a1851ae5babb82549da79be16a163d28e5b41d9a
 }
