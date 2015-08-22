@@ -1,0 +1,16 @@
+{
+  "name": "happngin-assets",
+  "version": "0.0.0",
+  "description": "Happngin (bower) script and css packager (cache)",
+  "main": "lib/assets.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/yordigm/happngin-assets.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/yordigm/happngin-assets#readme"
+}
