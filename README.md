@@ -1,8 +1,6 @@
-`npm install happngin-assets`
-
 ### Usage:
 
-In mesh config:
+#### In mesh config:
 
 ```javascript
 
@@ -47,7 +45,7 @@ bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
         bowerDirectory + '/bluebird/bluebird.js',
       ],
 
-      // set css, used build single css package from 
+      // set css, used to build single css package from 
       // multiple sources
 
       css: [
@@ -66,4 +64,31 @@ bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
   ...
 ```
 
+#### In the client:
+
+(/assets/js, /assets/css, /assets/html)
+
+```html
+<html>
+<head>
+    <script src='/assets/js'></script>
+    <link rel='stylesheet' type='text/css' href='/assets/css'></link>
+</head>
+<body ng-app='Demo'>
+    <!-- /assets/html nested INSIDE ng-app -->
+    <script src='/assets/html'></script>
+    <ng-view></ng-view>
+</body>
+```
+
+### Production
+
+```bash
+NODE_ENV=production node myMesh.js
+```
+In production mode the js, css and html are each compiled into single packages (minified and gzipped)
+
+### Development (the default)
+
+In development mode the scripts and css are all downloaded into the browser in their respective original unminified files.
 
