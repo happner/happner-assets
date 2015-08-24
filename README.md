@@ -9,20 +9,10 @@ bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
   ...
   components: {
     "assets": {
-      
-      // set masks, used to mask out the
-      // leading part of the path/url for
-      // all 'js', 'css' and 'html'
-
       masks: [
         'http://localhost',
         bowerDirectory
       ],
-
-      // set js, used to build a single script package
-      // from external sources, local directories or
-      // client components of other local mesh modules
-
       js: [
         'http://localhost/firstMeshComponent/static/client.js',
         'http://localhost/anotherMeshComponent/static/client.js',
@@ -30,17 +20,10 @@ bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
         bowerDirectory + '/jquery/dist/jquery.js',
         bowerDirectory + '/bluebird/bluebird.js',
       ],
-
-      // set css, used to build single css package from 
-      // multiple sources
-
       css: [
         'http://localhost/firstMeshComponent/static/client.css',
         'http://localhost/anotherMeshComponent/static/client.css',
       ],
-
-      // set ngApp, for angular templates to be included with the js package
-
       ngApp: {
         name: 'templateS', // name of angular module to include into app
         templates: [
@@ -72,7 +55,7 @@ var app = angular.module('Demo', ['templateS'])
 .directive('thing', [function() {
   return {
     templateUrl: '/firstMeshComponent/static/client.html',
-                 // is preloaded in production mode
+                 // is preloaded in production mode via /assets/js package
     ...
   }
 }]);
