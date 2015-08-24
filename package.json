@@ -1,7 +1,7 @@
 {
   "name": "happngin-assets",
-  "version": "0.0.0",
-  "description": "Happngin (bower) script and css packager (cache)",
+  "version": "0.0.1",
+  "description": "Happngin javascript, stylesheet and angular template production packager.",
   "main": "lib/assets.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
