@@ -66,7 +66,7 @@ var app = angular.module('Demo', ['templateS'])
 ```bash
 NODE_ENV=production node myMesh.js
 ```
-In production mode the js, css and html are each compiled into single packages (minified and gzipped)
+In production mode the js, css are each compiled into single packages (minified, gzipped and cached in the browser)
 
 ### Development (the default)
 
