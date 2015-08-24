@@ -1,3 +1,5 @@
+`npm install happngin-assets --save`
+
 ### Usage:
 
 #### In mesh config:
@@ -8,7 +10,7 @@ bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
 
   ...
   components: {
-    "assets": {
+    "assets": { // defaults to require module 'happngin-assets'
       masks: [
         'http://localhost',
         bowerDirectory
