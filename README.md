@@ -10,20 +10,6 @@ bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
   components: {
     "assets": {
       
-      // pending defaultations, this is necessary each time. 
-      schema: {
-        exclusive: true
-      },
-      web: {
-        routes: {
-          js: 'js',
-          css: 'css',
-          html: 'html'
-        }
-      },
-
-
-
       // set masks, used to mask out the
       // leading part of the path/url for
       // all 'js', 'css' and 'html'
@@ -53,12 +39,15 @@ bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
         'http://localhost/anotherMeshComponent/static/client.css',
       ],
 
-      // set html, (for angular templates) assembles a single package
+      // set ngApp, for angular templates to be included with the js package
 
-      html: [
-        'http://localhost/firstMeshComponent/static/client.html',
-        'http://localhost/anotherMeshComponent/static/client.html',
-      ]
+      ngApp: {
+        name: 'templateS', // name of angular module to include into app
+        templates: [
+          'http://localhost/firstMeshComponent/static/client.html',
+          'http://localhost/anotherMeshComponent/static/client.html',
+        ]
+      }
     }
   }
   ...
@@ -74,11 +63,19 @@ bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
     <script src='/assets/js'></script>
     <link rel='stylesheet' type='text/css' href='/assets/css'></link>
 </head>
-<body ng-app='Demo'>
-    <!-- /assets/html nested INSIDE ng-app -->
-    <script src='/assets/html'></script>
-    <ng-view></ng-view>
+<body ng-app='Demo' ng-view>
 </body>
+```
+
+```javascript
+var app = angular.module('Demo', ['templateS'])
+.directive('thing', [function() {
+  return {
+    templateUrl: '/firstMeshComponent/static/client.html',
+                 // is preloaded in production mode
+    ...
+  }
+}]);
 ```
 
 ### Production
