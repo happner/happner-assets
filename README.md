@@ -55,7 +55,7 @@ bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
 
 #### In the client:
 
-(/assets/js, /assets/css, /assets/html)
+(/assets/js, /assets/css)
 
 ```html
 <html>
