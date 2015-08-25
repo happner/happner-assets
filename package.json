@@ -1,6 +1,6 @@
 {
   "name": "happngin-assets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Happngin javascript, stylesheet and angular template production packager.",
   "main": "lib/assets.js",
   "scripts": {
