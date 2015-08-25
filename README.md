@@ -40,6 +40,8 @@ bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
 
 #### In the client:
 
+__NOTE:__ All scripts where load order matters should be in the package. Additional scripts called from the page will load out of order.
+
 (/assets/js, /assets/css)
 
 ```html
