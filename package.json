@@ -1,6 +1,6 @@
 {
   "name": "happngin-assets",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Happngin javascript, stylesheet and angular template production packager.",
   "main": "lib/assets.js",
   "scripts": {
@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/yordigm/happngin-assets.git"
+    "url": "https://github.com/nomilous/happngin-assets"
   },
   "author": "",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/yordigm/happngin-assets#readme",
+  "homepage": "https://github.com/nomilous/happngin-assets",
   "dependencies": {
     "clean-css": "^3.3.9",
     "debug": "^2.2.0",
