@@ -1,5 +1,7 @@
 `npm install happner-assets --save`
 
+Asset packager for [happner](https://github.com/happner/happner)
+
 ### Usage:
 
 #### In mesh config:
