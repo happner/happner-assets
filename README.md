@@ -1,4 +1,4 @@
-`npm install happngin-assets --save`
+`npm install happner-assets --save`
 
 ### Usage:
 
@@ -10,7 +10,7 @@ bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
 
   ...
   components: {
-    "assets": { // defaults to require module 'happngin-assets'
+    "assets": { // defaults to require module 'happner-assets'
       masks: [
         'http://localhost',
         bowerDirectory

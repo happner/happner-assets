@@ -1,18 +1,18 @@
 {
-  "name": "happngin-assets",
-  "version": "0.0.3",
-  "description": "Happngin javascript, stylesheet and angular template production packager.",
+  "name": "happner-assets",
+  "version": "0.0.4",
+  "description": "Happner javascript, stylesheet and angular template production packager.",
   "main": "lib/assets.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nomilous/happngin-assets"
+    "url": "https://github.com/nomilous/happner-assets"
   },
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/nomilous/happngin-assets",
+  "homepage": "https://github.com/nomilous/happner-assets",
   "dependencies": {
     "clean-css": "^3.3.9",
     "debug": "^2.2.0",
