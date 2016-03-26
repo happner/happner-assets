@@ -2,6 +2,22 @@
 
 Asset packager for [happner](https://github.com/happner/happner)
 
+It packages all specified scripts, styles and angular templates into a single `js` and `css` file and can including resources from the local site and from elsewhere on the internet. Any scripts not included into the package might load/execute out of sequence <b>so include all scripts into the package</b>.
+
+### Production
+
+```bash
+NODE_ENV=production node myMesh.js
+
+optional: DEBUG=happn* ...
+```
+In production mode the js, css are each compiled into single packages (minified, gzipped and cached in the browser)
+
+### Development (the default)
+
+In development mode the scripts and css are all downloaded into the browser as their respective original unminified files.
+
+
 ### Usage:
 
 #### In mesh config:
@@ -66,17 +82,3 @@ var app = angular.module('Demo', ['templateS'])
   }
 }]);
 ```
-
-### Production
-
-```bash
-NODE_ENV=production node myMesh.js
-
-optional: DEBUG=happn* ...
-```
-In production mode the js, css are each compiled into single packages (minified, gzipped and cached in the browser)
-
-### Development (the default)
-
-In development mode the scripts and css are all downloaded into the browser in their respective original unminified files.
-
