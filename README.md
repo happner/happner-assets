@@ -2,7 +2,7 @@
 
 Asset packager for [happner](https://github.com/happner/happner)
 
-It packages all specified scripts, styles and angular templates into a single `js` and `css` file and can including resources from the local site and from elsewhere on the internet. Any scripts not included into the package might load/execute out of sequence <b>so include all scripts into the package</b>.
+It packages all specified scripts, styles and angular templates into a single `js` and `css` file and can include resources from the local site and from elsewhere on the internet. Any scripts not included into the package might load/execute out of sequence <b>so include all scripts into the package</b>.
 
 ### Production
 
