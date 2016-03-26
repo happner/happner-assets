@@ -4,6 +4,10 @@ Asset packager for [happner](https://github.com/happner/happner)
 
 It packages all specified scripts, styles and angular templates into a single `js` and `css` file and can include resources from the local site and from elsewhere on the internet. Any scripts not included into the package might load/execute out of sequence <b>so include all scripts into the package</b>.
 
+### Caveat
+
+It only builds the package on first request. And there will be a problem if any of the configured resources are not available.
+
 ### Production
 
 ```bash
@@ -24,11 +28,11 @@ In development mode the scripts and css are all downloaded into the browser as t
 
 ```javascript
 
-bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
+var bowerDirectory = require('path').normalize(__dirname + '/../bower_components');
 
   ...
   components: {
-    "assets": { // defaults to require module 'happner-assets'
+    'assets': { // defaults to require module 'happner-assets'
       masks: [
         'http://localhost',
         bowerDirectory
