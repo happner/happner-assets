@@ -6,7 +6,11 @@ It packages all specified scripts, styles and angular templates into a single `j
 
 ### Caveat
 
-It only builds the package on first request. And there will be a problem if any of the configured resources are not available.
+It only builds the package on first request. And there will be a problem if any of the configured resources are not available. For this reason use of only local resources is recommended.
+
+### Todo
+
+Build package on startup.
 
 ### Production
 
