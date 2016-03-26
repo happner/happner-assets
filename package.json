@@ -1,6 +1,6 @@
 {
   "name": "happner-assets",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Happner javascript, stylesheet and angular template production packager.",
   "main": "lib/assets.js",
   "scripts": {
@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nomilous/happner-assets"
+    "url": "https://github.com/happner/happner-assets"
   },
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/nomilous/happner-assets",
+  "homepage": "https://github.com/happner/happner-assets",
   "dependencies": {
     "clean-css": "^3.3.9",
     "debug": "^2.2.0",
